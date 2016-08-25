@@ -1,0 +1,83 @@
+.constructor-app
+  /* Base for label styling */
+  [type="radio"]:not(:checked),
+  [type="radio"]:checked {
+    position: absolute;
+    left: -9999px;
+  }
+  [type="radio"]:not(:checked) + label,
+  [type="radio"]:checked + label {
+    position: relative;
+    padding-left: 50px;
+    cursor: pointer;
+    display inline-block
+    text-align left
+    font-size 14px
+    color #352a0f
+  }
+
+  /* radio aspect */
+  [type="radio"]:not(:checked) + label:before,
+  [type="radio"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left:0; top: 2px;
+    width: 35px; height: 35px;
+    border: 1px solid #efefef;
+    background: #ffffff;
+    border-radius: 3px;
+    outline: none;
+    box-sizing: border-box;
+    transition: all .1s;
+  }
+  /* checked mark aspect */
+  [type="radio"]:not(:checked) + label:after,
+  [type="radio"]:checked + label:after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: #000;
+    position: absolute;
+    top: 3px; right: 15px;
+    font-size: 18px;
+    line-height: 0.8;
+    transition: all .2s;
+    border-radius: 10px;
+  }
+  /* checked mark aspect changes */
+  [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+  }
+  [type="radio"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  [type="radio"]:not(:checked) + label:before {
+
+  }
+  [type="radio"]:checked + label:before {
+    border: 2px solid #fdd835;
+  }
+
+  /* disabled radio */
+  [type="radio"]:disabled:not(:checked) + label:before,
+  [type="radio"]:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #ddd;
+  }
+  [type="radio"]:disabled:checked + label:after {
+    color: #999;
+  }
+  [type="radio"]:disabled + label {
+    color: #aaa;
+  }
+
+
+  /* hover style just for information */
+  label:hover:before {
+    border: 2px solid #fdd835!important;
+    transition: all .1s;
+  }

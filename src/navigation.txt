@@ -1,0 +1,61 @@
+var mainNavigation = [
+
+    {
+        name: 'Dahboard',
+        action: 'dashboard',
+        icon: 'dashboard'
+    },
+
+    {
+        name: 'My projects',
+        action: 'my-projects',
+        item: [{
+            name: 'Project 1',
+            action: 'project-1',
+            icon: 'media/icon-project-1-icon.png',
+            items: [{
+                name: 'Subitem 1',
+                action: 'subitem-1',
+                icon: 'media/icon-dashboard.png',
+                notifications: 2
+            }, {
+                name: 'Subitem 2',
+                action: 'subitem-2',
+                icon: 'media/icon-analytics.png'
+            }, {
+                name: 'Subitem 3',
+                action: 'subitem-3'
+            }]
+        }, {
+            name: 'Project 2',
+            items: [{
+                name: 'Subitem 1',
+                action: 'subitem-1',
+                icon: 'media/icon-dashboard.png',
+                notifications: 2
+            }, {
+                name: 'Subitem 2',
+                action: 'subitem-2',
+                icon: 'media/icon-analytics.png'
+            }, {
+                name: 'Subitem 3',
+                action: 'subitem-3'
+            }]
+        }, ]
+
+    },
+
+    {
+        name: 'Admin',
+        action: 'admin',
+        icon: 'media/icon-admin.png'
+    },
+
+    {
+        name: 'Contact',
+        action: 'legacy/contact',
+        icon: 'media/icon-contact.png'
+    },
+
+
+];

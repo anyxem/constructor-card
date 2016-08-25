@@ -1,0 +1,32 @@
+*
+  box-sizing border-box
+
+.constructor-app
+  font-family sans-serif
+  width 1000px
+  margin 0 auto
+  position relative
+
+  p
+    margin-top 13px
+    margin-bottom 13px
+
+
+  .desktopbar
+    float left
+    width 670px
+    position relative
+    z-index 10
+
+  .sidebar
+    float right
+    width 313px
+    position relative
+    z-index 20
+
+  &.action-order
+    .desktopbar
+      width 46%
+    .order-box
+      width 54%
+      float right

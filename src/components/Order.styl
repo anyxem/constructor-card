@@ -1,0 +1,142 @@
+.desktop
+  width 670px
+  height 700px
+  float left
+  margin-bottom 20px
+  background-color #f5f5f5
+  position relative
+  background-repeat no-repeat
+
+  &.order
+    transform-origin top center
+    transform scale(0.7)
+
+    .workarea
+      pointer-events none
+
+
+/*   ORDER TABLE    */
+
+.order-box
+  position relative
+  z-index 10
+  .price-table
+    table
+      border 1px solid #efefef
+      border-radius 5px
+      border-collapse collapse
+      thead
+        tr
+          th
+            vertical-align top
+            text-align left
+            font-weight normal
+            padding: 22px 5px 3px 5px;
+            font-size: 14px;
+      tbody
+
+        tr
+          td
+            padding 9px 5px
+            font-size 17px
+            &.bullet
+              width 65px
+              span
+                background-color #fff
+            &.count
+              width 90px
+              text-align left
+              font-weight bold
+            &.price
+              width 110px
+              font-weight bold
+              text-align left
+              text-decoration line-through
+            &.salePrice
+              text-align left
+              font-weight bold
+              color #f00
+            &.saleAmount
+              color #ccc
+            &.freeShipping
+              color #ccc
+              font-size 10px
+          &.active
+            background-color #000
+            td
+              &.bullet
+                span
+                  background-color #fff
+              &.count
+                color #fff
+              &.price
+                color #fff
+              &.salePrice
+                text-align left
+                color #f00
+              &.saleAmount
+                color #fff
+              &.freeShipping
+                color #fff
+      tfoot
+        background-color #efefef
+        tr
+          td
+            &.totalLabel
+              padding 14px 29px
+            &.totalPrice
+              color #f00
+              font-weight bold
+              font-size 17px
+
+    .note
+      font-size: 12px;
+      margin-top: 14px;
+  .cart-total-submit
+    margin-top 40px
+
+    .cart-total
+      display inline-block
+      width: 300px;
+      text-align: right;
+      span
+        font-size: 23px;
+        margin-right: 13px;
+      strong
+        font-size 36px
+        color #f00
+    .add2cartForm
+      float right
+    .add2cart
+      display inline-block
+
+.add2cart
+  float right
+  display: inline-block;
+  background-color: #fdd835;
+  border none
+  height: 35px;
+  width: 211px;
+  text-align: center;
+  line-height: 33px;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 3px;
+
+.editBtn
+  position absolute
+  top 20px
+  z-index 50
+  left 50%
+  cursor pointer
+  margin-left -250px
+  margin-top -40px
+  display: inline-block;
+  background-color: #fdd835;
+  height: 35px;
+  width: 211px;
+  text-align: center;
+  line-height: 33px;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 3px;
